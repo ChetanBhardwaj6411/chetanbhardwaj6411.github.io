@@ -1,0 +1,71 @@
+
+body{
+	
+	background-color: #fff; 
+	font-size: 18px;
+	font-family: Garamond, serif;
+	text-align: center;
+	
+}	
+
+h1{
+	
+	font-family: MV Boli;
+	font-family: Ink Free;
+	font-size: 84px;
+	color: purple;
+	margin-top: 24px;
+	margin-bottom: -10px;
+		
+}
+
+h2{
+	
+	color: blue;
+	
+	
+}
+
+
+a{
+	
+	color: black;
+	text-decoration: none;	
+	
+}
+
+.email{
+	
+	color: black;
+	font-size: 12px;
+	margin-top: -20px;
+	margin-bottom: 0px;
+	
+}	
+
+.college{
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+}	
+
+.information{
+
+	color: blue;
+
+}
+
+.image{
+	
+	
+	
+	
+}
+
+.description{
+	
+	
+	
+}
+
