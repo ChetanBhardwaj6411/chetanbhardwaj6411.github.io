@@ -1,31 +1,25 @@
 
+/* || GENERAL STYLES */
+
 body{
-	
-	background-color: #fff; 
-	font-size: 18px;
-	font-family: Garamond, serif;
+
+	background-color: #fff;
 	text-align: center;
+	font-family: Garamond, serif;
+	overflow: hidden;
 	
-}	
-
-h1{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-self: center;
 	
-	font-family: MV Boli;
-	font-family: Ink Free;
-	font-size: 84px;
-	color: purple;
-	margin-top: 24px;
-	margin-bottom: -10px;
-		
-}
-
-h2{
-	
-	color: blue;
-	
+	width: 100%;
+	height: auto;
 	
 }
-
 
 a{
 	
@@ -34,38 +28,57 @@ a{
 	
 }
 
-.email{
+h1{
 	
-	color: black;
-	font-size: 12px;
-	margin-top: -20px;
-	margin-bottom: 0px;
-	
-}	
-
-.college{
-
-	margin-top: 0px;
-	margin-bottom: 0px;
-	
-}	
-
-.information{
-
-	color: blue;
+	font-size: 42px;
 
 }
 
-.image{
+h2{
 	
-	
-	
+	font-size: 24px;
 	
 }
 
-.description{
+#name{
 	
+	margin-top: 110px;
+	flex-basis: 50px;
+
+}
+
+#description{
 	
+	font-size: 18px;
+	margin-top: -10px;
+	flex-basis: 40px;
+		
+}
+
+#socials{
+	
+	text-align: center;
+	display:inline-block;
+	margin-top: -20px;	
+	flex-basis: 50px;
 	
 }
+
+#contents{
+
+	flex-basis: 100px;	
+	
+}
+
+footer{
+
+    align-content: baseline;
+    animation-direction: alternate;
+    display: flex;
+    opacity: 0.6;	
+	margin-top: 130px;
+	text-align: center;
+
+}
+
 
