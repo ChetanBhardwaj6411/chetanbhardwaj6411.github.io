@@ -19,7 +19,11 @@ body{
 	
 	width: 100%;
 	height: auto;
-	
+
+	background-image: 'media\Image.jpg';
+
+	/* background-image: url('media\Image.jpg'); */
+
 }
 
 a{
