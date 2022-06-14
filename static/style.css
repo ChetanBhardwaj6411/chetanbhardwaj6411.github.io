@@ -3,11 +3,12 @@
 
 body{
 
-	background-color: #fff;
+	background-color: rgb(255, 255, 255);
+	/* background-color: #fff; */
 	text-align: center;
 	font-family: Garamond, serif;
 	overflow: hidden;
-	
+
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
