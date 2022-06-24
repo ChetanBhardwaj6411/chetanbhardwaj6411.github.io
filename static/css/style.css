@@ -1,298 +1,478 @@
 
-/* Creation: 22nd June 2022, 10:41 PM */
+/* Creation: 24th June 2022, 11:40 PM */
 
+/* Contains all the CSS styles created upto this point */
 
+/* Steps:-
 
-/* || General styles */
-
-:root { 
-	
-  --font: "Garamond", sans-serif;
-	
-  scroll-behavior: smooth;
-	
-  font-size: 62.5%;				/* 62.5% of 16px is 10px */ 
-
-  /* Colors */
-	
-  /* For all the HTMLs */
-
-  --main-background-color: #759FBC;			  /* Air Superiority Blue */
-  --main-text-color: #1F5673;				  /* Blue Sapphire */
-  --main-links-color: #1F5673;                /* Was Black; Changed it to be the same as the --main-text-color */
-  --main-hr-color: #1F5673;                   /* Same as the --main-text-color */
-  --main-active-links-color: none;            /* #90C3C8; */		  /* Middle Blue */
-  
-  /* For all the navbars */
-
-  --navbar-logo-color: #034748;
-  --navbar-background-color: #2B4570;
-  --navbar-links-color: #034748;
-  --navbar-active-links-color:#A9E2CC ;			/* Same as the --main-active-links-color */
-  --navbar-checkbutton-color: White;  
-  
-
-  /* @Media Queries */  	
-  
-  /* 952px */  									  /* Nothing special */ 						  
-	
-  /* 858px */
-  
-  --main-background-color-858px: #69DDFF;		  
-
-  --navbar-links-color-858px: #DBBADD;
-
-  --navbar-active-links-color-858px: #DBBADD;
-  
-  
-}
-
-* {
-
-  margin: 0;
-  padding: 0; 
-
-  font-family: var(--font);
-  
-  color: var(--main-text-color);
-  background-color: var(--main-background-color);
-  
-  box-sizing: border-box;
-  text-align: center;
-  
-}
-
-/* :root
-
-	The :root CSS pseudo-class matches the root element of a tree representing the document. In HTML, :root represents the <html> element and is identical to 
-	the selector html, except that its specificity is higher. 
+    1. Create a unique CSS file for every HTML file
+    2. Combine all the CSS files into one CSS file (Minification)
 
 */
 
 
 
-/* || Typography */
+/* || General styles */
 
-/*  https://www.reddit.com/r/web_design/comments/36zkp4/eli5_baseline_typography_and_how_to_create/  */
+/* 
+   The :root CSS pseudo-class matches the root element of a tree representing the document. In HTML, :root represents the <html> element and is identical to 
+   the selector html, except that its specificity is higher. 
+*/
 
-body{
+:root {                                                /* This remains the same for all the CSS files */
 	
+    --font: "Garamond", sans-serif;
+  
+    scroll-behavior: smooth;
+  
+    font-size: 62.5%;				                    /* 62.5% of 16px is 10px */ 
+  
+    /* Colors */
+  
+    --main-background-color: #759FBC;			       /* Air Superiority Blue */
+    --main-text-color: #1F5673;				       /* Blue Sapphire */
+    --main-links-color: #1F5673;                      /* Was Black; Changed it to be the same as the --main-text-color */
+    --main-hr-color: #1F5673;                         /* Same as the --main-text-color */
+    --main-active-links-color: none;                    /* #90C3C8; */		     /* Middle Blue */
+  
+    --navbar-logo-color: #034748;
+    --navbar-background-color: #2B4570;
+    --navbar-links-color: #034748;
+    --navbar-active-links-color:#A9E2CC ;			   /* Same as the --main-active-links-color */
+    --navbar-checkbutton-color: White;  
+  
+    /* @Media Queries */  	
+  
+    /* 952px */  									  /* Nothing special */ 						  
+  
+    /* 858px */
+  
+    --main-background-color-858px: #69DDFF;		  
+  
+    --navbar-links-color-858px: #DBBADD;
+  
+    --navbar-active-links-color-858px: #DBBADD;
+    
+  }
+  
+  * {
+  
+    margin: 0;
+    padding: 0; 
+  
+    font-family: var(--font);
+  
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+  
+    box-sizing: border-box;
+    text-align: center;
+    
+  }
+  
+  
+  
+  
+  
+  /* || Typography */
+  
+  /*  https://www.reddit.com/r/web_design/comments/36zkp4/eli5_baseline_typography_and_how_to_create/  */
+  
+  body{
+      
     font-size: 1.8rem;
     line-height: 1.5;
-	
-}
-
-h1, h2, h3, h4, h5, h6, p, hr{
-	
+      
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, hr{
+      
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
-	
-	color: var(--main-text-color);
-	
-}
-
-h1{
-	
+  
+    color: var(--main-text-color);
+      
+  }
+  
+  h1, h2, h3, h4{
+      
+      margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+  }
+  
+  h1{
+      
     font-size: 4rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-	
-}
-
-h2{
-	
+      
+      
+  }
+  
+  h2{
+      
     font-size: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-	
-}
-
-h3{
-	
+      
+  }
+  
+  h3{
+      
     font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-	
-}
-
-h4{
-	
+      
+  }
+  
+  h4{
+      
     font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
-}
-
-p{
-
+  
+  }
+  
+  p{
+  
     margin-top: 1rem;
     margin-bottom: 1rem;
-
-}
-
-hr{
-	
+  
+  }
+  
+  hr{
+      
     border: none;
     background-color: var(--main-hr-color);
     height: 0.1rem;
-	
-}
-
-a{
-
-  color: var(--main-links-color);         /* Black */
-  text-decoration: none;
-
-}
-
-/* a.active, */ a:hover{
-
-  background: var(--main-active-links-color);				/* Active Navbar Links' Color   ***Active -> Focused on  */		
-  transition: 0.4s;
-
-}
-
-
-/* || Header and Main Navigation */
-
-nav{
-
-  background: var(--navbar-background-color);
-  height: 6.4rem;
-  width: 100%;
-
-}
-
-.logo-link{
-
-  color: var(--navbar-logo-color);
-  font-size: 3.6rem;
-  padding: 0 10rem;
-  font-weight: bold;
-
-}
-
-.logo-link:hover{
-
-  background: none;
-
-}
-
-
-nav ul{
-
-  float: right;
-  margin-right: 2rem;
-
-}
-
-
-nav ul li{
-
-  display: inline-block;
-  line-height: 8rem;
-  margin: 0 0.5rem;
-
-}
-
-
-nav ul li a {
-
-  color: var(--navbar-links-color); 
-  font-size: 1.8rem;
-  padding: 0.7rem 1.3rem;
-  border-radius: 3px;
-
-}
-
-
-
-
-
-/* || Utilities */
-
-
-
-/* || What do I put here? */
-
-
-
-
-
-
-/* || Sitewide */
-
-
-
-
-
-
-
-
-/* || Store Pages */
-
-
-/* Home (Index) */
-
-#main{
-	
-	
-	
-}
-
-#main-header{
-	
-	/* How to implement this? */
-	
-}
-
-#main-name{
-	
-	margin-top: 80px;
-	flex-basis: 50px;
-	
-	font-size: 4.8rem;
-		
-}
-
-#main-description{
-	
-	font-size: 18px;
-	margin-top: -1.5rem;
-	flex-basis: 40px;
-	
-	
-}
-
-#main-socials{
-	
-	text-align: center;
-	display: inline-block;
-	margin-top: 0rem;	
-	flex-basis: 50px;
-	
-}
-
-#main-contents{
-	
-	margin-top: -1rem;
-	flex-basis: 100px;	
-	
-}
-
-
-.a-social{
-	
-	margin: 1px;
-	
-	
-}
-
-
-	
-.projects, .articles, .about, .contact{
-	
-	color: var(--main-links-color);
-	
-}
+      
+  }
+  
+  a{
+  
+    color: var(--main-links-color);         
+    text-decoration: none;
+  
+  }
+  
+  a:hover{
+  
+    background: var(--main-active-links-color);					
+    transition: all 0.3s ease 0s;
+  
+  }
+  
+  label{
+      
+      /* What do I put here? */
+      
+  }
+  
+  
+  
+  
+  
+  /* || Header and Main Navigation */
+  
+  li, a, button{
+  
+      font-size: 1.6rem;
+      color: #EDF0F1;
+      text-decoration: none;
+      
+  }
+  
+  header{
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 8%;
+      
+      background-color: var(--navbar-background-color);
+      
+  }
+  
+  .logo-link, .nav-link, .cta{
+  
+      background-color: var(--navbar-background-color);
+      
+  }
+  
+  
+  .logo-link{
+      
+      font-size: 2.4rem;
+      cursor: pointer;
+  
+  }
+  
+  .nav-links{
+      
+      list-style: none;
+      
+  }
+  
+  .nav-links li{
+      
+      display: inline-block;
+      padding: 0px 20px;
+      
+  }
+  
+  .nav-links li a{
+      
+      transition: all 0.3s ease 0s;
+      
+  }
+  
+  
+  .nav-links li a:hover{
+      
+      color: #0088A9;
+      
+  }
+  
+  button{
+      
+      padding: 9px 25px;
+      background-color: rgba(0,136,169,1);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      
+  }
+  
+  button:hover{
+  
+      background-color: rgba(0,136,169,0.8);
+  
+  }	
+      
+  
+  .checkbtn{
+  
+    font-size: 26px;
+    color: var(--navbar-checkbutton-color);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  
+  }
+  
+  #check{
+  
+    display: none;
+  
+  }
+  
+  @media(max-width: 952px){
+    
+    label.logo{
+  
+      font-size: 30px;
+      padding-left: 50px;
+  
+    }
+  
+    nav ul li a{
+  
+      font-size: 16px;
+    
+    }
+    
+  }
+  
+  @media(max-width: 858px){
+  
+    .checkbtn{
+      display: block;
+    }
+  
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: var(--main-background-color-858px);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.3s ease 0s;
+    }
+  
+    nav ul li{
+  
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  
+    }
+  
+    nav ul li a{
+  
+      font-size: 20px;
+  
+    }
+  
+    a:hover, a.active{
+  
+      background: none;
+      color: var(--navbar-active-links-color-858px);
+  
+    }
+  
+    #check:checked ~ ul{
+  
+      left: 0
+  
+    }
+  
+  }
+  
+  @media(max-width: 425px){
+  
+    .logo-link{
+  
+      font-size: 10px;
+      padding-left: 50px;
+  
+    }
+  
+    ul{
+  
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: var(--main-background-color-858px);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.3s ease 0s;
+  
+    }
+  
+    nav ul li{
+  
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  
+    }
+  
+    nav ul li a{
+  
+      font-size: 20px;
+  
+    }
+  
+    a:hover, a.active{
+  
+      background: none;
+      color: var(--navbar-active-links-color-858px);
+  
+    }
+  
+    #check:checked ~ ul{
+  
+      left: 0
+  
+    }
+  
+  
+  
+  }  
+  
+  
+  
+  
+  /* || Utilities */
+  
+  
+  
+  
+  
+  
+  
+  /* || What do I put here? */
+  
+  
+  
+  
+  
+  
+  /* || Sitewide */
+  
+  
+  
+  
+  
+  
+  
+  
+  /* || Store Pages */
+  
+  /* Home (Index) */
+  
+  #main{
+      
+      
+      
+  }
+  
+  #main-header{
+      
+      /* How to implement this? */
+      
+  }
+  
+  #main-name{
+      
+      margin-top: 80px;
+      flex-basis: 50px;
+      
+      font-size: 4.8rem;
+          
+  }
+  
+  #main-description{
+      
+      font-size: 18px;
+      margin-top: -1.5rem;
+      flex-basis: 40px;
+      
+      
+  }
+  
+  #main-socials{
+      
+      text-align: center;
+      display: inline-block;
+      margin-top: 0rem;	
+      flex-basis: 50px;
+      
+  }
+  
+  #main-contents{
+      
+      margin-top: -1rem;
+      flex-basis: 100px;	
+      
+  }
+  
+  
+  .a-social{
+      
+      margin: 1px;
+      
+      
+  }
+  
+  
+  .projects, .articles, .about, .contact{
+      
+      color: var(--main-links-color);
+      
+  }
+  
+  
+  
+  /* Articles */
+  
+  

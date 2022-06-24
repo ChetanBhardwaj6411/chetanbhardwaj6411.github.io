@@ -1,0 +1,206 @@
+
+/* General styles, Utilities, Sitewide and Store Pages */
+
+
+/* || General styles */
+
+:root {                                               /* This remains the same for all the CSS files */
+	
+  --font: "Garamond", sans-serif;
+
+  scroll-behavior: smooth;
+
+  font-size: 62.5%;				                           
+
+  /* Colors */
+
+  --main-background-color: #759FBC;			           /* Air Superiority Blue */
+  --main-text-color: #1F5673;				               /* Blue Sapphire */
+  --main-links-color: #1F5673;                      /* Same as the --main-text-color */
+  --main-hr-color: #1F5673;                         /* Same as the --main-text-color */
+  --main-active-links-color: #90C3C8;;                    /* #90C3C8; */		  /* Middle Blue */
+
+  --navbar-logo-color: #034748;
+  --navbar-background-color: #2B4570;
+  --navbar-links-color: #034748;
+  --navbar-active-links-color:#A9E2CC ;			       /* Same as the --main-active-links-color */
+  --navbar-checkbutton-color: White;  
+
+  /* @Media Queries */  	
+
+  /* 952px */  									  /* Nothing special */ 						  
+
+  /* 858px */
+
+  --main-background-color-858px: #69DDFF;		  
+
+  --navbar-links-color-858px: #DBBADD;
+
+  --navbar-active-links-color-858px: #DBBADD;
+  
+}
+
+* {
+
+  margin: 0;
+  padding: 0; 
+
+  font-family: var(--font);
+
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+
+
+/* || Typography */
+
+body{
+	
+  font-size: 1.8rem;
+  line-height: 1.5;
+	
+}
+
+h1, h2, h3, h4, h5, h6, p, hr{
+	
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--main-text-color);
+	
+}
+
+h1, h2, h3, h4{
+	
+	margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+h1{
+	
+  font-size: 4rem;
+    
+	
+}
+
+h2{
+	
+  font-size: 3rem;
+	
+}
+
+h3{
+	
+  font-size: 2.5rem;
+	
+}
+
+h4{
+	
+  font-size: 2rem;
+
+}
+
+p{
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+hr{
+	
+  border: none;
+  background-color: var(--main-hr-color);
+  height: 0.1rem;
+	
+}
+
+a{
+
+  color: var(--main-links-color);         
+  text-decoration: none;
+
+}
+
+/* Change the a:hover parameter as required */
+
+a:hover{
+
+  color: var(--main-active-links-color);					
+  transition: all 0.3s ease 0s;
+
+}
+
+
+
+/* || Store Pages */
+
+/* ||| Home (Index) */
+
+/* #main{
+	
+  Empty	
+	
+} */
+
+/* #main-header{
+	
+  Empty	
+	
+} */
+
+#main-name{
+	
+	margin-top: 80px;
+	flex-basis: 50px;
+	
+	font-size: 4.8rem;
+		
+}
+
+#main-description{
+	
+	font-size: 18px;
+	margin-top: -1.5rem;
+	flex-basis: 40px;
+	
+	
+}
+
+#main-socials{
+	
+	text-align: center;
+	display: inline-block;
+	margin-top: 0rem;	
+	flex-basis: 50px;
+	
+}
+
+.a-social{
+	
+	margin: 1px;
+	
+	
+}
+
+#main-contents{
+	
+	margin-top: -1rem;
+	flex-basis: 100px;	
+	
+}
+
+.projects, .articles, .about, .contact{
+	
+	
+	
+}
+
