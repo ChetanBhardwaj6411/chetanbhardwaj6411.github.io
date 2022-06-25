@@ -9,8 +9,6 @@
 		<link rel="stylesheet" type= "text/css" href="static/css/style-articles.css">
 		<script src="static/js/script.js" defer> </script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 		<link rel="icon" href="media/Icon2.ico" type="image/vnd.microsoft.icon">
 
 		<meta name="title" content="Chetan Bhardwaj's Website">
@@ -26,14 +24,20 @@
 	<body id="articles-page">
 		
 		<header>
-		
-			<label> <a class="logo-link" href="home"> Chetan Bhardwaj </a> </label>
-				
+
+			<h1 class="logo"> Chetan Bhardwaj </h1>
+
+			<input type="checkbox" id="nav-toggle" class="nav-toggle">
+
 			<nav>
 				
 				<ul class="nav-links">	
-				
+					
+					<li class="nav-link"> <a href="home"> Home </a> </li>
+
 					<li class="nav-link"> <a href="projects"> Projects </a> </li>
+
+					<!-- <li class="nav-link"> <a href="blog"> Blog </a> </li> -->
 
 					<li class="nav-link"> <a href="about"> About </a> </li>
 
@@ -43,112 +47,88 @@
 			
 			</nav>
 			
-			<a class="cta" href="dark-mode"> <button> Dark Mode </button> </a> 
-			
-		</header>
-		
-		
-	
-	
-	</body>
+			<label for="nav-toggle" class="nav-toggle-label">
 
-</html>
-
-
-
-
-<!-- <nav id="navbar-articles"> 	
-
-			<input type="checkbox" id="check"> 
-
-			<label for="check" class="checkbtn"> 
-
-				<i class="fas fa-bars"> </i>
+				<span> </span>
 
 			</label>
 
-			<label> <a class="logo-link" href="home"> Chetan Bhardwaj </a> </label>
+		</header>
 
-			<ul class="ul-navbar">
-			
-				<!-- <li> <a class="active" href="projects"> Projects </a> </li> 
+		<section>
 
-				<li class="li-navbar"> <a href="projects"> Projects </a> </li>
+	<!-- 	<div class="articles">
 
-				<li class="li-navbar"> <a href="about"> About </a> </li>
+				<div class="articles-introduction"> 
 
-				<li class="li-navbar"> <a href="contact"> Contact </a> </li>
+					<h1 class="title"> Articles </h1>
 
+					<p class="short-desc"> 
+						
+						Hello. Welcome to my blog. It is 8:29 AM, 20th June 2022 right now.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus libero, 
+						venenatis congue vestibulum pellentesque, ullamcorper in quam. Mauris ac viverra 
+						risus. Nunc malesuada, orci id gravida porta, ipsum ante interdum odio, ac 
+						scelerisque ante nisi vel diam. Mauris feugiat ac turpis eget finibus. Suspendisse 
+						potenti. Vestibulum id bibendum orci. Duis dolor lacus, faucibus quis libero quis, 
+						lobortis mattis eros. Nam volutpat ante quis odio tempor, sed porttitor nisl 
+						faucibus.
 
-			</ul>
+						Phasellus ornare lacus sit amet velit euismod, at placerat nisl rutrum. 
+						Phasellus pharetra pharetra arcu. Nam sed condimentum nisl. Duis vitae massa 
+						sit amet ipsum congue hendrerit vitae eget magna.
+						
+					</p>
 
-		</nav> -->
+				</div>
+				
+				<div class="article-search">
 
-
-
-<!-- 
+					<input type="text" placeholder="Type to Search">
 		
-		<div class="articles">
+				</div>
 
-			<div class="articles-introduction"> 
+				<div class="articles-chronologically">
+				
+				<div class="some=space"> <br> <br> </div>
 
-				<h1 class="title"> Articles </h1>
+					<div class="2022">
 
-				<p class="short-desc"> 
-					
-					Hello. Welcome to my blog. It is 8:29 AM, 20th June 2022 right now.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus libero, 
-					venenatis congue vestibulum pellentesque, ullamcorper in quam. Mauris ac viverra 
-					risus. Nunc malesuada, orci id gravida porta, ipsum ante interdum odio, ac 
-					scelerisque ante nisi vel diam. Mauris feugiat ac turpis eget finibus. Suspendisse 
-					potenti. Vestibulum id bibendum orci. Duis dolor lacus, faucibus quis libero quis, 
-					lobortis mattis eros. Nam volutpat ante quis odio tempor, sed porttitor nisl 
-					faucibus.
+						<h3 class=""> 2022 </h3>
 
-					Phasellus ornare lacus sit amet velit euismod, at placerat nisl rutrum. 
-					Phasellus pharetra pharetra arcu. Nam sed condimentum nisl. Duis vitae massa 
-					sit amet ipsum congue hendrerit vitae eget magna.
-					
-				</p>
+						<div class="article-1">
+							
+							<p> 20th June 2022, 5:03 PM </p>
 
-			</div>
-			
-			<div class="article-search">
+						</div>
 
-				<input type="text" placeholder="Type to Search">
-	
-			</div>
+						<div class="article-2">
+							
+							<p> 20th June 2022, 5:03 PM - 1 </p>
 
-			<div class="articles-chronologically">
-			
-			<div class="some=space"> <br> <br> </div>
+						</div>
 
-				<div class="2022">
+						<div class="article-3">
+							
+							<p> 20th June 2022, 5:03 PM - 2 </p>
 
-					<h3 class=""> 2022 </h3>
-
-					<div class="article-1">
-						
-						<p> 20th June 2022, 5:03 PM </p>
-
-					</div>
-
-					<div class="article-2">
-						
-						<p> 20th June 2022, 5:03 PM - 1 </p>
-
-					</div>
-
-					<div class="article-3">
-						
-						<p> 20th June 2022, 5:03 PM - 2 </p>
+						</div>
 
 					</div>
 
 				</div>
 
-			</div>
+			</div>	-->
 
-		</div>	
-		
-		-->
+		</section>
+
+		<footer>
+
+			
+
+
+		</footer>
+
+	</body>
+
+</html>

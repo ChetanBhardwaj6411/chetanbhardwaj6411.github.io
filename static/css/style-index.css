@@ -17,27 +17,8 @@
   --main-background-color: #759FBC;			           /* Air Superiority Blue */
   --main-text-color: #1F5673;				               /* Blue Sapphire */
   --main-links-color: #1F5673;                      /* Same as the --main-text-color */
-  --main-hr-color: #1F5673;                         /* Same as the --main-text-color */
-  --main-active-links-color: #90C3C8;;                    /* #90C3C8; */		  /* Middle Blue */
+  --main-active-links-color: #90C3C8;;              /* #90C3C8; */		  /* Middle Blue */
 
-  --navbar-logo-color: #034748;
-  --navbar-background-color: #2B4570;
-  --navbar-links-color: #034748;
-  --navbar-active-links-color:#A9E2CC ;			       /* Same as the --main-active-links-color */
-  --navbar-checkbutton-color: White;  
-
-  /* @Media Queries */  	
-
-  /* 952px */  									  /* Nothing special */ 						  
-
-  /* 858px */
-
-  --main-background-color-858px: #69DDFF;		  
-
-  --navbar-links-color-858px: #DBBADD;
-
-  --navbar-active-links-color-858px: #DBBADD;
-  
 }
 
 * {
@@ -198,9 +179,9 @@ a:hover{
 	
 }
 
-.projects, .articles, .about, .contact{
+/* .projects, .articles, .about, .contact{
 	
 	
 	
-}
+} */
 
