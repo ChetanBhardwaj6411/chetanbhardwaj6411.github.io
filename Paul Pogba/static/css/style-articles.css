@@ -1,0 +1,359 @@
+
+/* General styles, Utilities, Sitewide and Store Pages */
+
+
+/* || General styles */
+
+:root {                                               /* This remains the same for all the CSS files */
+
+	--font: "Garamond", sans-serif;
+
+	scroll-behavior: smooth;
+
+	font-size: 62.5%;				                           
+
+	/* Colors */
+
+	--main-background-color: #759FBC;			           
+	--main-text-color: #1F5673;				               
+	--main-links-color: #1F5673;                      
+	--main-active-links-color: #90C3C8;;             
+
+
+	--navbar-logo-color: #1F5673;
+    /* --navbar-background-color: #344957; */
+	--navbar-background-color: #16232b;
+	--navbar-links-color: #1F5673;	
+	--navbar-active-links-color: #A9E2CC ;
+	--navbar-links-overline-color: rgba(17, 75, 13, 1);	
+
+}
+
+* {
+
+	margin: 0;
+	padding: 0; 
+
+	font-family: var(--font);
+	color: var(--main-text-color);
+
+	box-sizing: border-box;
+	text-align: center;
+
+}
+
+
+
+/* || Typography */
+
+body{
+	
+	font-size: 1.8rem;
+	line-height: 1.5;
+	
+}
+
+h1, h2, h3, h4, h5, h6, p, hr{
+	
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+h1, h2, h3, h4{
+	
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+}
+
+h1{
+	
+	font-size: 4rem;
+	
+	
+}
+
+h2{
+	
+	font-size: 3rem;
+	
+}
+
+h3{
+	
+	font-size: 2.5rem;
+	
+}
+
+h4{
+	
+	font-size: 2rem;
+
+}
+
+p{
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+}
+
+hr{
+	
+	border: none;
+	background-color: var(--main-hr-color);
+	height: 0.1rem;
+	
+}
+
+a{
+
+	color: var(--main-links-color);         
+	text-decoration: none;
+
+}
+
+/* Change the a:hover parameter as required */
+
+a:hover{
+
+	color: var(--main-active-links-color);					
+	transition: all 0.3s ease 0s;
+
+}
+
+
+
+/* || Header and Main Navigation */
+
+header{
+
+	background: var(--navbar-background-color);
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+
+}
+
+.logo{
+
+	font-size: 3.4rem;
+
+}
+
+.nav-toggle{
+
+	display: none;
+
+}
+
+.nav-toggle-label{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 1em;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-toggle-label span, 
+.nav-toggle-label span:before, 
+.nav-toggle-label span:after{
+
+	display: block;
+	background: white;
+	height: 2px;
+	width: 2em;
+	width: 2em;
+	border-radius: 2px;
+	position: relative;
+
+}
+
+.nav-toggle-label span:before, 
+.nav-toggle-label span:after{
+
+	content: '';
+	position: absolute;
+
+}
+
+.nav-toggle-label span:before{
+
+	bottom: 7px;
+
+}
+
+.nav-toggle-label span:after{
+
+	top: 7px;
+
+}
+
+nav{
+
+	position: absolute; 
+	text-align: left;
+	top: 100%;
+	left: 0;
+	background: var(--navbar-background-color);
+	width: 100%;
+
+	transform: scale(1, 0);
+	transform-origin: top;
+	transition: transform 400ms ease-in-out;
+
+}
+
+nav ul{
+
+	list-style: none;
+	text-align: left;
+
+}
+
+nav li{
+
+	margin-bottom: 1em;
+	margin-left: 1em;
+
+	text-align: left;
+
+}
+
+nav a{
+
+	color: var(--navbar-links-color);
+	text-decoration: none;
+	font-size: 2rem;
+	text-transform: uppercase;
+	opacity: 0;
+
+	transition: opacity 150ms ease-in-out;
+
+}
+
+nav a:hover{
+
+	color: var(--navbar-active-links-color);
+
+}
+
+.nav-toggle:checked ~ nav{
+
+	transform: scale(1,1);
+
+}
+
+.nav-toggle:checked ~ nav a{
+
+	opacity: 1;
+	transition: opacity 250ms ease-in-out 250ms;
+
+}
+
+@media screen and (min-width: 800px) {
+	
+	.nav-toggle-label{
+
+		display: none;
+
+	}
+
+	header{
+
+		display: grid;
+		grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+
+	}
+
+	.logo{
+
+		/* grid-column: 2 / span 1; */
+		grid-column: 2 / 3;
+
+
+	}
+
+	nav{
+
+		all: unset;
+		grid-column: 3 / 4; 
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+	}
+
+	nav ul{
+
+		display: flex;
+		justify-content: flex-end;
+		border: 1
+
+	}
+
+	nav li{
+
+		margin-left: 3em;
+		margin-bottom: 0;
+
+	}
+
+	nav a{
+
+		opacity: 1;
+		position: relative;
+
+	}
+
+	nav a::before {
+
+		content:'';
+		display: block;
+		height: 5px;
+		background: var(--navbar-links-overline-color);
+		position: absolute;
+		top: -0.4em;
+		left: 0;
+		right: 0;
+		transform: scale(0, 1);
+		/* transform-origin: left; */
+		transition: transform ease-in-out 250ms;
+
+	}
+
+	nav a:hover::before{
+
+		transform: scale(1,1);
+
+	}
+
+}
+
+/* Header and Main Navigation Ends */
+
+
+
+/* Main Body */
+
+section{
+
+	background-color: var(--main-background-color);
+	
+
+}
+
+
+
+
+
+
+
+
+
