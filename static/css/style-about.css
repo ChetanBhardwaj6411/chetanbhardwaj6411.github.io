@@ -336,4 +336,22 @@ nav a:hover{
 
 }
 
+@media screen and (max-width: 320px) {
+
+	.logo{
+
+		font-size: 2.4rem;
+
+	}
+
+	nav a{
+
+		font-size: 1.6rem;
+
+	}
+
+
+}
+
+
 /* Header and Main Navigation Ends */
