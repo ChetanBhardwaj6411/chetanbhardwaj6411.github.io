@@ -10,7 +10,7 @@ button.addEventListener('click', (e)=>{
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
-    fetch('https://cb-portfolio-website-backend.herokuapp.com/', {
+    fetch('https://cb-portfolio-website-backend.herokuapp.com/savedetails', {
         
         method: 'POST',
         headers: {
