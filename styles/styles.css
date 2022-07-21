@@ -6,7 +6,7 @@
 }
 
 :root {
-  font-size: 62.5%;
+   font-size: 62.5%;
   --color-primary: #191d2b;
   --color-secondary: #24dc70;
   --color-white: #FFFFFF;
@@ -38,7 +38,7 @@
 
 body {
   background-color: var(--color-primary);
-  font-family: "Garamond", sans-serif;
+  font-family: 'EB Garamond', serif;
   font-size: 1.4rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
